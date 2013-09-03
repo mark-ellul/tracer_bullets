@@ -15,11 +15,11 @@ module TracerBullets
 
     def _tracer_bullets_log(msg)
       log = Rails.logger
-      if defined?(ActiveSupport::TaggedLogging)
-        log.tagged("TracerBullets") { |l| l.debug(msg) }
-      else
-        log.debug(msg)
-      end
+      #if defined?(ActiveSupport::TaggedLogging)
+      #  log.tagged("TracerBullets") { |l| l.debug(msg) }
+      #else
+      log.debug(msg)
+      #end
     end
   end
 
